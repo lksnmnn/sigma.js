@@ -22,7 +22,10 @@ module.exports = {
       {
         test: /\.glsl$/,
         exclude: /node_modules/,
-        loader: 'raw-loader'
+        loader: [
+          'raw-loader',
+          'glslify-loader'
+        ]
       },
       {
         test: /\.js$/,

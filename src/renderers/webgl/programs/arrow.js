@@ -6,8 +6,8 @@
  */
 import Program from './program';
 import {floatColor} from '../utils';
-import vertexShaderSource from '../shaders/arrow.vert.glsl';
-import fragmentShaderSource from '../shaders/arrow.frag.glsl';
+import vertexShaderSource from 'raw-loader!glslify-loader!../shaders/arrow.vert.glsl';
+import fragmentShaderSource from 'raw-loader!glslify-loader!../shaders/arrow.frag.glsl';
 
 const POINTS = 3,
       ATTRIBUTES = 10;

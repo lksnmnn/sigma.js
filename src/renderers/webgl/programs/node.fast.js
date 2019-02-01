@@ -8,8 +8,8 @@
  */
 import Program from './program';
 import {floatColor} from '../utils';
-import vertexShaderSource from '../shaders/node.fast.vert.glsl';
-import fragmentShaderSource from '../shaders/node.fast.frag.glsl';
+import vertexShaderSource from 'raw-loader!glslify-loader!../shaders/node.fast.vert.glsl';
+import fragmentShaderSource from 'raw-loader!glslify-loader!../shaders/node.fast.frag.glsl';
 
 const POINTS = 1,
       ATTRIBUTES = 4;

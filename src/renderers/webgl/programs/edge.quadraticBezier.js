@@ -6,8 +6,8 @@
  */
 import Program from './program';
 import {floatColor} from '../utils';
-import vertexShaderSource from '../shaders/edge.quadraticBezier.vert.glsl';
-import fragmentShaderSource from '../shaders/edge.quadraticBezier.frag.glsl';
+import vertexShaderSource from 'raw-loader!glslify-loader!../shaders/edge.quadraticBezier.vert.glsl';
+import fragmentShaderSource from 'raw-loader!glslify-loader!../shaders/edge.quadraticBezier.frag.glsl';
 
 const POINTS = 3,
       ATTRIBUTES = 5;

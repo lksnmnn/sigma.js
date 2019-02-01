@@ -7,8 +7,8 @@
  */
 import Program from './program';
 import {floatColor} from '../utils';
-import vertexShaderSource from '../shaders/edge.fast.vert.glsl';
-import fragmentShaderSource from '../shaders/edge.fast.frag.glsl';
+import vertexShaderSource from 'raw-loader!glslify-loader!../shaders/edge.fast.vert.glsl';
+import fragmentShaderSource from 'raw-loader!glslify-loader!../shaders/edge.fast.frag.glsl';
 
 const POINTS = 2,
       ATTRIBUTES = 3;

@@ -9,8 +9,8 @@
  */
 import Program from './program';
 import {floatColor} from '../utils';
-import vertexShaderSource from '../shaders/node.vert.glsl';
-import fragmentShaderSource from '../shaders/node.frag.glsl';
+import vertexShaderSource from 'raw-loader!glslify-loader!../shaders/node.vert.glsl';
+import fragmentShaderSource from 'raw-loader!glslify-loader!../shaders/node.frag.glsl';
 
 const ANGLE_1 = 0,
       ANGLE_2 = 2 * Math.PI / 3,

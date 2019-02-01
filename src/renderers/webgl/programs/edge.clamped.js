@@ -9,8 +9,8 @@
  */
 import Program from './program';
 import {floatColor, canUse32BitsIndices} from '../utils';
-import vertexShaderSource from '../shaders/edge.clamped.vert.glsl';
-import fragmentShaderSource from '../shaders/edge.frag.glsl';
+import vertexShaderSource from 'raw-loader!glslify-loader!../shaders/edge.clamped.vert.glsl';
+import fragmentShaderSource from 'raw-loader!glslify-loader!../shaders/edge.frag.glsl';
 
 const POINTS = 4,
       ATTRIBUTES = 7,
